@@ -7,10 +7,21 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { DatabindingComponent } from './databinding/databinding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { LifecyclehooksComponent } from './lifecyclehooks/lifecyclehooks.component';
-
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { Sub1Component } from './sub1/sub1.component';
+import { SubComponent } from './sub/sub.component';
+import { Sub2Component } from './sub2/sub2.component';
+import { SearchPipe } from './search.pipe';
+import { TemplatedrivenformComponent } from './templatedrivenform/templatedrivenform.component';
+import { SignUpReactiveFormComponent } from './sign-up-reactive-form/sign-up-reactive-form.component';
+import { NumbersOnlyDirective } from './numbers-only.directive';
+import { Viewchild1Component } from './viewchild1/viewchild1.component';
+import { Viewchild2Component } from './viewchild2/viewchild2.component';
+console.log("module calling...");
 
 @NgModule({
   declarations: [ //component/pipe/directive
@@ -21,12 +32,25 @@ import { LifecyclehooksComponent } from './lifecyclehooks/lifecyclehooks.compone
     DatabindingComponent,
     DirectivesComponent,
     LifecyclehooksComponent,
+    ParentComponent,
+    ChildComponent,
+    SubComponent,
+    Sub1Component,
+    Sub2Component,
+    SearchPipe,
+    TemplatedrivenformComponent,
+    SignUpReactiveFormComponent,
+    NumbersOnlyDirective,
+    Viewchild1Component,
+    Viewchild2Component,
+    
     
   ],
   imports: [  //modules
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
